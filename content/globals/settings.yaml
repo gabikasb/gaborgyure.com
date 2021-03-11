@@ -1,18 +1,18 @@
 title: Settings
 data:
-  site_name: 'Starter''s Creek'
-  personality: casual
-  show_signup: true
+  site_name: 'Gabor''s Bloooooooooooooog'
+  personality: formal
+  show_signup: false
   social:
     -
       name: Twitter
-      url: 'https://twitter.com/statamic'
+      url: 'https://twitter.com/gabikasb'
       icon: site/social-icons/twitter.svg
     -
       name: Github
-      url: 'https://github.com/statamic/starter-kit-starters-creek'
+      url: 'https://github.com/gabikasb'
       icon: site/social-icons/github.svg
     -
       name: Email
-      url: 'mailto:jack@statamic.com'
+      url: 'mailto:gabor@gaborgyure.com'
       icon: site/social-icons/email.svg
