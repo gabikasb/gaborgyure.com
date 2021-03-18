@@ -1184,6 +1184,20 @@ pre > code .token.inserted {
 [x-cloak] { display: none;
 }
 
+.navi {
+  display: flex;
+}
+
+.navi li {
+    margin-right: 1em;
+  }
+
+input, textarea {
+  border: solid 3px darkslategrey;
+  border-radius: 0 0 0 1rem;
+  width: 20rem;
+}
+
 .container {
   width: 100%;
 }

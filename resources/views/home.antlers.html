@@ -18,21 +18,47 @@
                 <ul >
                     <li ><a href="https://github.com/gabikasb" >github</a></li>
                     <li ><a href="https://www.linkedin.com/in/gyuregabor/" >linkedin</a></li>
-                    <li ><a href="https://www.f6s.com/gborgyre" >F6S Platform</a></li>
-                    <li ><a href="https://medium.com/@gyuregabi" >Medium</a></li>
+                    <li ><a href="https://www.f6s.com/gborgyre" >F6S platform</a></li>
+                    <li ><a href="https://medium.com/@gyuregabi" >medium</a></li>
                     <li ><a href="https://grabcad.com/gyure.gabor-1/" >grabcad</a></li>
                     <li ><a href="https://www.facebook.com/gyuregabi" >facebook</a></li>
                     <li ><a href="https://instagram.com/gyfk" >instagram</a></li>
                     <li ><a href="https://twitter.com/gabikasb" >twitter</a></li>
                     <li ><a href="https://sbphd.tumblr.com/" >tumblr</a></li>
-                <li><a href="http://blog.gaborgyure.com">+1, MY OWN BLOG :)</a></li>
+                    <li><a href="/blog">+1, my brand new super-work-in-progress blog :)</a></li>
                 </ul>
                 <h2 >Contact me:</h2>
                 <p >
                     You want to work with me or just say hi?
                     <br>Shoot me an
                      <a href="mailto:hello@gaborgyure.com" >email</a>.
-
                 </p>
-           
+                <p>or message me:</p>
+                    {{ form:contact }}
+
+                    {{ if success }}
+                        <div class="bg-green-300 text-white p-2">
+                            {{ success }}
+                        </div>
+                    {{ else }}
+                        {{ if errors }}
+                            <div class="bg-red-300 text-white p-2">
+                                {{ errors }}
+                                    {{ value }}<br>
+                                {{ /errors }}
+                            </div>
+                        {{ /if }}
+                    {{ fields }}
+                            <div class="p-2">
+                                <label>{{ display }}</label>
+                                <div class="p-1">{{ field }}</div>
+                                {{ if error }}
+                                    <p class="text-gray-500">{{ error }}</p>
+                                {{ /if }}
+                            </div>
+                        {{ /fields }}
+                    <button type="submit">Submit</button>
+                    {{ /if }}
+                
+                {{ /form:contact }}
         </div>

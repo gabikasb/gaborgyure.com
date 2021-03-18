@@ -31,3 +31,14 @@ fields:
       validate:
         - required
         - email
+  -
+    handle: message
+    field:
+      antlers: false
+      display: message
+      type: textarea
+      icon: textarea
+      instructions: 'write me'
+      listable: hidden
+      validate:
+        - required

@@ -4,6 +4,11 @@
         <button class="hover:text-hot-pink transition-all duration-100 outline-none" @click="searching = true; $nextTick(() => { $refs.search.focus() })" aria-label="Search the site">
             {{ svg src="search-{settings:personality}" class="w-6 h-6" }}
         </button>
+        <ul class="navi">
+            {{ nav:primary }}
+                <li><a href="{{ url }}">{{ title }}</a></li>
+            {{ /nav:primary }}
+            </ul>
         <form action="/search" x-show="searching" x-cloak class="flex-1">
             <input
                 name="q"
