@@ -1,10 +1,9 @@
            <div class="content">
-                <h1>Hello, my name is Gabor</h1>
+                <h1>Hi, my name is Gabor</h1>
                 <p>
                     I&#x27;m a mechanical engineer with deep interest in process and information flow development in an open way.
                     I also have a thing for digital prototyping and validation.
                 </p>
-
                 <h2>Some organizations I am / was working for:</h2>
                 <ul>
                     <li><a href="https://www.miskolcigeneracio.hu" >MAG KTE</a><br  /><small >2017</small></li>
@@ -27,38 +26,40 @@
                     <li ><a href="https://sbphd.tumblr.com/" >tumblr</a></li>
                     <li><a href="/blog">+1, my brand new super-work-in-progress blog :)</a></li>
                 </ul>
-                <h2 >Contact me:</h2>
-                <p >
-                    You want to work with me or just say hi?
-                    <br>Shoot me an
-                     <a href="mailto:hello@gaborgyure.com" >email</a>.
-                </p>
-                <p>or message me:</p>
-                    {{ form:contact }}
+                <aside class="text-center py-16 max-w-3xl mx-auto">
+                    <div class="w-full border-t-2 mb-8 border-black squiggle"></div>
+                    <h2 id="contact">Contact me:</h2>
+                        <p >
+                            You want to work with me or just say hi? Shoot me an <a href="mailto:hello@gaborgyure.com" >email</a>.
+                        </p>
+                        <p>or message me:</p>
+                            {{ form:contact }}
 
-                    {{ if success }}
-                        <div class="bg-green-300 text-white p-2">
-                            {{ success }}
-                        </div>
-                    {{ else }}
-                        {{ if errors }}
-                            <div class="bg-red-300 text-white p-2">
-                                {{ errors }}
-                                    {{ value }}<br>
-                                {{ /errors }}
-                            </div>
-                        {{ /if }}
-                    {{ fields }}
-                            <div class="p-2">
-                                <label>{{ display }}</label>
-                                <div class="p-1">{{ field }}</div>
-                                {{ if error }}
-                                    <p class="text-gray-500">{{ error }}</p>
+                            {{ if success }}
+                                <div class="bg-green-300 text-white p-2">
+                                    {{ success }}
+                                </div>
+                            {{ else }}
+                                {{ if errors }}
+                                    <div class="bg-red-300 text-white p-2">
+                                        {{ errors }}
+                                            {{ value }}<br>
+                                        {{ /errors }}
+                                    </div>
                                 {{ /if }}
-                            </div>
-                        {{ /fields }}
-                    <button type="submit">Submit</button>
-                    {{ /if }}
-                
-                {{ /form:contact }}
+                            {{ fields }}
+                                    <div class="p-2">
+                                        <label>{{ display }}</label>
+                                        <div class="p-1">{{ field }}</div>
+                                        {{ if error }}
+                                            <p class="text-gray-500">{{ error }}</p>
+                                        {{ /if }}
+                                    </div>
+                                {{ /fields }}
+                            <button type="submit">Submit</button>
+                            {{ /if }}
+                        
+                        {{ /form:contact }}
+                    <div class="w-full border-b-2 pt-12 border-black squiggle"></div>
+                </aside>
         </div>
