@@ -1,11 +1,12 @@
-name: 'Gabor Gyure'
+name: 'Gábor Gyüre'
 super: true
+handle: gabor
 id: f0b4cd50-339d-4551-830a-53d1860c7b83
 password_hash: $2y$10$3yOA5lng2xGyDF98lrWWLe1ORHwxZHmckcIgNG37.TU8n6h43HkI6
 preferences:
   assets:
     assets:
-      mode: table
+      mode: grid
   collections:
     blog:
       columns:
