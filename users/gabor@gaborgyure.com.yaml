@@ -6,7 +6,7 @@ password_hash: $2y$10$3yOA5lng2xGyDF98lrWWLe1ORHwxZHmckcIgNG37.TU8n6h43HkI6
 preferences:
   assets:
     assets:
-      mode: grid
+      mode: table
   collections:
     blog:
       columns:
