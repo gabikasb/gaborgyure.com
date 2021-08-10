@@ -6,3 +6,6 @@ tree:
     entry: home
   -
     entry: d76a79cf-7ac4-4798-a29b-9dec4fcbb34f
+  -
+    title: 'dev space'
+    url: 'https://dev.gaborgyure.com'
