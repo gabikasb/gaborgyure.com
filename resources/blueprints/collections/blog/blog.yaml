@@ -108,11 +108,11 @@ sections:
           validate:
             - required
       -
-        handle: author
+        handle: parent
         field:
+          type: entries
+          collections:
+            - blog
           max_items: 1
-          mode: select
-          type: users
-          listable: true
-          display: Author
-          default: current
+          listable: false
+          localizable: true
